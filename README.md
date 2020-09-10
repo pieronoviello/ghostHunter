@@ -31,7 +31,7 @@ Essendo un test php ho pensato di creare una funzione per esportare il CSV utili
 curl -d 'act=export_csv' http://DOMAIN_OR_IP/jagaad/core/controller/wishlist.controller.php
 ```
 
-In alternativa ho creato anche un CLI, sostituisci "CONTAINER" con il nome del tuo container:
+In alternativa ho creato anche un CLI, sostituisci **CONTAINER** con il nome del tuo container:
 ```bash
 docker exec -i CONTAINER_db_1 mysql -D ja_test -u root -p -e "SELECT count(w.id) as n_items_wishlist, u.email FROM wishlist AS w JOIN users AS u ON u.id=w.id_user GROUP BY u.id" | awk '{print $1";"$2}' > users.csv
 ```

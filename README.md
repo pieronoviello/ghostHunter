@@ -20,7 +20,7 @@ Estrai l'archivio `src.tar` contenente il codice sostituendo **CONTAINER** con i
 docker run --rm --volumes-from CONTAINER_php_1 -v $(pwd):/backup php:7.4-apache bash -c "cd / && tar xvf /backup/src.tar"
 ````
 
-* Importa il database ja_test.sql come preferisci: terminale/phpmyadmin/..
+* Importa il database `ja_test.sql` come preferisci: terminale/phpmyadmin/..
 * Enjoy
 
 

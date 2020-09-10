@@ -38,4 +38,6 @@ docker exec -i CONTAINER_db_1 mysql -D ja_test -u root -p -e "SELECT count(w.id)
 # Footnotes
 
 P.s: Scusa l'attesa ma sto creando un APP in AR molto simpatica, poi te la faccio vedere. Sono comunque contento di essere riuscito a rispettare il tempo di consegna lavorandoci alcune sere quando ero libero dal resto.
+
+
 Qualsiasi feedback è ben accetto.
